@@ -4,7 +4,7 @@ import streamlit as st
 
 st.title("chatter for you~")
 
-client = OpenAI(api_key="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")
+client = OpenAI(api_key=st.secrets["OPEN_API_KEY"])
 
 name = st.text_input("please enter your name")
 
